@@ -1,0 +1,15 @@
+{
+	"name":              "epickris/epickris.com",
+	"authors":           [
+		{
+			"name":  "Kristian Matthews",
+			"email": "kristian.matthews@me.com"
+		}
+	],
+	"config": {
+		"vendor-dir": "epickris/vendors"
+	},
+	"require": {
+		"epickris/ci-fuel": "dev-master"
+	}
+}
