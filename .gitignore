@@ -1,11 +1,11 @@
-# Composer
-vendor
-
-# Node.js
-node_modules
+# Configurations
+config/development
 
 # Logs
 log-*
 
-# Configurations
-config/development/*
+# Composer
+vendor
+
+# Node and npm
+node_modules
