@@ -1,0 +1,30 @@
+{
+	"name": "epickris/epickris.com",
+	"authors":           [
+		{
+			"name":  "Kristian Matthews",
+			"email": "kristian.matthews@me.com"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"CodeIgniter\\": "system/"
+		}
+	},
+	"require": {
+		"php": ">=7.0",
+		"zendframework/zend-escaper": "^2.5",
+		"EpicKris/data-format": "^1"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "5.3.*",
+		"mikey179/vfsStream": "1.6.*",
+		"satooshi/php-coveralls": "^1.0"
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"composer dump-autoload",
+			"CodeIgniter\\ComposerScripts::postUpdate"
+		]
+	}
+}

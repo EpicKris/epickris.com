@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectTasksOptions">
+    <TaskOptions isEnabled="true">
+      <option name="arguments" value="" />
+      <option name="checkSyntaxErrors" value="true" />
+      <option name="description" value="Compiles .less files into .css files" />
+      <option name="exitCodeBehavior" value="ERROR" />
+      <option name="fileExtension" value="less" />
+      <option name="immediateSync" value="true" />
+      <option name="name" value="Less Dashboard Theme" />
+      <option name="output" value="" />
+      <option name="outputFilters">
+        <array>
+          <FilterInfo>
+            <option name="description" value="lessc error format" />
+            <option name="name" value="lessc" />
+            <option name="regExp" value="$MESSAGE$\Q in \E$FILE_PATH$\Q on line \E$LINE$\Q, column \E$COLUMN$" />
+          </FilterInfo>
+        </array>
+      </option>
+      <option name="outputFromStdout" value="false" />
+      <option name="program" value="gulp" />
+      <option name="scopeName" value="Dashboard Theme" />
+      <option name="trackOnlyRoot" value="false" />
+      <option name="workingDir" value="$PROJECT_DIR$/public/components/theme-dashboard" />
+      <envs />
+    </TaskOptions>
+  </component>
+</project>

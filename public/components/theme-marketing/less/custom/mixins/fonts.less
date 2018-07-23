@@ -1,0 +1,14 @@
+.font-face(@font-family, @font-file-base, @font-weight: normal, @font-style: normal) {
+	@font-face {
+		font-family: @font-family;
+		src: url('@{font-path}@{font-file-base}.eot');
+		src: url('@{font-path}@{font-file-base}.eot?#iefix') format('eot'),
+		url('@{font-path}@{font-file-base}.woff2') format('woff2'),
+		url('@{font-path}@{font-file-base}.woff') format('woff'),
+		url('@{font-path}@{font-file-base}.ttf') format('truetype'),
+		url('@{font-path}@{font-file-base}.svg') format('svg');
+		font-weight: @font-weight;
+		font-style: @font-style;
+		font-display: @font-display;
+	}
+}

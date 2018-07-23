@@ -1,0 +1,10 @@
+{
+    "name": "epickris.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/EpicKris/epickris.com.git"
+    },
+    "dependencies": {
+        "bower": "^1"
+    }
+}

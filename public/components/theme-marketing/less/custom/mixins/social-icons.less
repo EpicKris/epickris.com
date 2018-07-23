@@ -1,0 +1,10 @@
+.social-icon(@name, @content, @color: @brand-primary) {
+	.social-@{name}:before,
+	.social-@{name}-color:before {
+		content: @content;
+	}
+
+	.social-@{name}-color:before {
+		color: @color;
+	}
+}

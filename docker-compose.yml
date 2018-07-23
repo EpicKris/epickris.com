@@ -1,0 +1,37 @@
+version: '2'
+
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - 80:80
+      - 443:443
+    links:
+      - php
+    networks:
+      - epickris-network
+
+  php:
+    container_name: php-epickris
+    image: php:7.0
+    links:
+      - mysql
+    volumes:
+      - .:/var/www/epickris.com
+    networks:
+      - epickris-network
+
+  mysql:
+    container_name: mysql
+    image: mariadb:10.1.13
+    ports:
+      - 3306:3306
+    volumes:
+      - /var/lib/mysql
+    networks:
+      - epickris-network
+
+networks:
+  epickris-network:
+    driver: bridge

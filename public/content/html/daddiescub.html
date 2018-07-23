@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- These meta tags come first. -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+	{MobileAppHeaders}
+
+	<title>{Title}{block:SearchPage} ({lang:Search results for SearchQuery}){/block:SearchPage}{block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}</title>
+	{block:Description}
+		<meta name="description" content="{MetaDescription}">
+	{/block:Description}
+	<link rel="shortcut icon" href="{Favicon}">
+	<link rel="apple-touch-icon-precomposed" href="{PortraitURL-128}">
+	<link rel="alternate" type="application/rss+xml" href="{RSS}">
+
+	<!-- Include the CSS -->
+	<link href="http://static.tumblr.com/tldhdrz/KmEochgmd/toolkit-bold.min.css" rel="stylesheet">
+	<style>
+		{CustomCSS}
+	</style>
+</head>
+<body>
+
+<div class="block text-center">
+	<h1 class="block-title">{Title}</h1>
+	<p class="lead text-muted">{Description}</p>
+</div>
+
+<!-- Include jQuery (required) and the JS -->
+<script src="http://static.tumblr.com/tldhdrz/IVhochgov/jquery.min.js"></script>
+<script src="http://static.tumblr.com/tldhdrz/FVvochgsd/jquery-migrate.min.js"></script>
+<script src="http://static.tumblr.com/tldhdrz/22vochgu5/toolkit.min.js"></script>
+</body>
+</html>
